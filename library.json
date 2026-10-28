@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "updated": "2026-10-28",
+  "covers": [
+    {
+      "id": "example-text-light",
+      "name": "Plain text · light",
+      "author": "NAM FORGE",
+      "license": "MIT",
+      "source": "built-in preset (text-light)",
+      "preview": "covers/example-text-light.png",
+      "design": "covers/example-text-light.json",
+      "tags": ["text", "minimal", "built-in"],
+      "added": "2026-10-28"
+    }
+  ]
+}
