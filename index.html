@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NAM FORGE COVERS · Shared cover library</title>
+<meta name="description" content="Shared 128×64 Zoom MultiStomp cover library for NAM FORGE. Browse, download design JSON, submit your own covers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%231b1b1e'/%3E%3Crect x='1' y='1' width='14' height='14' fill='none' stroke='%235b9bd5'/%3E%3Crect x='3' y='3' width='10' height='2' fill='%23ffb02e'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#1b1b1e;--panel:#202024;--raised:#26262b;--line:#33333a;--line2:#4a4a52;
+  --text:#e7e4df;--subtle:#b4b0a9;--muted:#85827d;
+  --amber:#ffb02e;--amber2:#ffc35c;--blue:#5b9bd5;--blue2:#3f78a8;--red:#e05a5a;--green:#7fbf8f;
+  --mono:ui-monospace,"Cascadia Mono",Consolas,"Liberation Mono",monospace;
+  --sans:system-ui,"Noto Sans SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:300 13px/1.6 var(--mono);background-image:radial-gradient(circle at 1px 1px,rgba(231,228,223,.02) 1px,transparent 1.3px);background-size:22px 22px}
+a{color:var(--blue);text-decoration:none}a:hover{color:var(--amber)}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px 22px;border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand b{font-size:13px;letter-spacing:.24em;font-weight:600}
+.brand span{font-size:8px;letter-spacing:.16em;color:var(--muted)}
+.actions{display:flex;gap:7px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;height:27px;padding:0 10px;border:1px solid var(--muted);border-radius:2px;background:transparent;color:var(--text);font:400 10.5px var(--mono);letter-spacing:.04em;cursor:pointer}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#0d1218;font-weight:600}
+.btn.primary:hover{background:#7fb3e0;border-color:#7fb3e0;color:#0d1218}
+main{max-width:1200px;margin:0 auto;padding:22px}
+.hero{padding:4px 0 16px;border-bottom:1px solid var(--line);margin-bottom:16px}
+.hero h1{margin:0 0 6px;font:600 22px/1.15 var(--mono);letter-spacing:.06em}
+.hero p{margin:0;color:var(--subtle);font-size:11px;max-width:80ch}
+.note{font-size:9.5px;color:var(--muted);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-width:0}
+.thumb{display:block;width:100%;height:auto;background:#0d0b14;image-rendering:pixelated;border-bottom:1px solid var(--line)}
+.card-body{padding:10px 11px 12px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.name{font-size:12px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row{display:flex;justify-content:space-between;gap:8px;font-size:9.5px;color:var(--muted);min-width:0}
+.row span:last-child{color:var(--subtle);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+.tag{font-size:8px;letter-spacing:.06em;color:var(--amber);border:1px solid #5a4420;padding:1px 4px}
+.links{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.links .btn{height:24px;font-size:9.5px;padding:0 8px}
+.empty{border:1px dashed var(--line2);padding:30px;text-align:center;color:var(--muted);font-size:11px}
+#status{color:var(--muted);font-size:10px;margin:0 0 12px;min-height:1.4em}
+#status.err{color:var(--red)}
+footer{max-width:1200px;margin:0 auto;padding:10px 22px 34px;color:var(--muted);font-size:9px;border-top:1px solid var(--line);margin-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:600px){header,main{padding-left:14px;padding-right:14px}.hero h1{font-size:19px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><b>NAM FORGE COVERS</b><span>SHARED 128×64 LIBRARY</span></div>
+  <div class="actions">
+    <a class="btn" href="https://zisonzishen0415-stack.github.io/nam-forge/" target="_blank" rel="noopener">打开 NAM FORGE ↗</a>
+    <a class="btn primary" href="https://github.com/zisonzishen0415-stack/nam-forge-covers/issues/new?template=submit-cover.yml" target="_blank" rel="noopener">投稿封面 ↗</a>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <h1>共享封面库</h1>
+    <p>这里是 NAM FORGE 的公开封面库。下载 <strong>design JSON</strong> 后，在 App 里打开「封面设计 → 导入设计」即可使用；也可以下载 PNG 预览。</p>
+    <p class="note">只收录可共享的封面。投稿即表示你拥有原图版权或已获授权，并同意按所选许可发布。第三方画作（例如 B 站原图）未经许可不会收录。</p>
+  </div>
+  <p id="status">加载 library.json…</p>
+  <section class="grid" id="grid"></section>
+</main>
+<footer>
+  <span>NAM FORGE COVERS · <a href="https://github.com/zisonzishen0415-stack/nam-forge-covers">GitHub</a></span>
+  <span>Cover designs follow their entry license. App/engine credits: see NAM FORGE.</span>
+</footer>
+<script>
+'use strict';
+(async () => {
+  const status = document.getElementById('status');
+  const grid = document.getElementById('grid');
+  const fail = (msg) => { status.textContent = msg; status.className = 'err'; };
+  let data;
+  try {
+    const r = await fetch('library.json', {cache: 'no-store'});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    data = await r.json();
+  } catch (e) {
+    fail('无法读取 library.json：' + (e.message || e) + '（请确认 GitHub Pages 已发布）');
+    return;
+  }
+  const covers = Array.isArray(data.covers) ? data.covers : [];
+  status.textContent = covers.length ? ('共 ' + covers.length + ' 个封面') : '还没有共享封面';
+  if (!covers.length) {
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = '还没有共享封面。点右上角「投稿封面」提交第一个。';
+    grid.append(empty);
+    return;
+  }
+  const isHttp = (s) => /^https?:\/\//i.test(String(s || ''));
+  for (const c of covers) {
+    const card = document.createElement('article');
+    card.className = 'card';
+    if (c.preview) {
+      const img = document.createElement('img');
+      img.className = 'thumb'; img.loading = 'lazy'; img.alt = c.name || c.id || 'cover';
+      img.src = String(c.preview);
+      card.append(img);
+    } else {
+      const ph = document.createElement('div');
+      ph.className = 'thumb'; ph.style.aspectRatio = '2/1';
+      card.append(ph);
+    }
+    const body = document.createElement('div');
+    body.className = 'card-body';
+    const name = document.createElement('div');
+    name.className = 'name'; name.textContent = c.name || c.id || 'Untitled';
+    body.append(name);
+    const author = document.createElement('div'); author.className = 'row';
+    author.innerHTML = '<span>AUTHOR</span><span></span>';
+    author.lastElementChild.textContent = c.author || '—';
+    const lic = document.createElement('div'); lic.className = 'row';
+    lic.innerHTML = '<span>LICENSE</span><span></span>';
+    lic.lastElementChild.textContent = c.license || '—';
+    body.append(author, lic);
+    if (c.source) {
+      const src = document.createElement('div'); src.className = 'row';
+      src.innerHTML = '<span>SOURCE</span><span></span>';
+      const v = src.lastElementChild;
+      if (isHttp(c.source)) { const a = document.createElement('a'); a.href = String(c.source); a.target = '_blank'; a.rel = 'noopener'; a.textContent = c.source; v.append(a); }
+      else v.textContent = c.source;
+      body.append(src);
+    }
+    if (Array.isArray(c.tags) && c.tags.length) {
+      const tags = document.createElement('div'); tags.className = 'tags';
+      for (const t of c.tags.slice(0, 8)) { const s = document.createElement('span'); s.className = 'tag'; s.textContent = String(t); tags.append(s); }
+      body.append(tags);
+    }
+    const links = document.createElement('div'); links.className = 'links';
+    if (c.design) {
+      const a = document.createElement('a'); a.className = 'btn'; a.href = String(c.design); a.download = ''; a.textContent = '下载设计 JSON';
+      links.append(a);
+    }
+    if (c.preview) {
+      const a = document.createElement('a'); a.className = 'btn'; a.href = String(c.preview); a.download = ''; a.textContent = '下载 PNG';
+      links.append(a);
+    }
+    body.append(links);
+    card.append(body);
+    grid.append(card);
+  }
+})();
+</script>
+</body>
+</html>
