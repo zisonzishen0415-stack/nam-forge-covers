@@ -2,7 +2,7 @@ name: Accept shared cover
 
 on:
   issues:
-    types: [opened, labeled]
+    types: [opened]
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   accept:
-    if: contains(github.event.issue.labels.*.name, 'submission')
+    if: contains(github.event.issue.body, 'NAMFORGE-COVER')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
