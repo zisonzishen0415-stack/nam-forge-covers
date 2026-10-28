@@ -1,0 +1,69 @@
+name: Submit a cover
+description: Share a 128×64 NAM FORGE cover with the community
+title: "[Cover] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Export from NAM FORGE first:** 封面设计 → **导出设计** (JSON) and **导出封面** (PNG).
+
+        After creating this issue, **drag the JSON and PNG files into the issue body**. GitHub issue forms cannot attach files directly.
+
+        Only submit covers you made yourself, or artwork you have explicit permission to share. Third-party art without permission will not be merged.
+
+  - type: input
+    id: cover_name
+    attributes:
+      label: Cover name
+      placeholder: e.g. Walnut · AC30
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / credit
+      description: The name or handle to credit.
+      placeholder: your name / handle
+    validations:
+      required: true
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: The license you grant for this cover design.
+      options:
+        - CC0-1.0
+        - CC-BY-4.0
+        - CC-BY-SA-4.0
+        - MIT
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source / original artwork
+      description: Link the original artwork if the cover uses third-party art. Write "original" if you made the artwork.
+      placeholder: https://... or "original"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / tags
+      placeholder: amp or cab, style, tags, anything else.
+      render: text
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I attached the design JSON and PNG to this issue.
+          required: true
+        - label: I made this cover or have permission to share the artwork, and I agree to publish it under the selected license.
+          required: true
