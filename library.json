@@ -16,6 +16,328 @@
         "built-in"
       ],
       "added": "2026-10-28"
+    },
+    {
+      "id": "cover-01",
+      "name": "封面 1",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM39tb3.ZDL",
+      "preview": "covers/cover-01.png",
+      "design": "covers/cover-01.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-02",
+      "name": "封面 2",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM38vx3.ZDL",
+      "preview": "covers/cover-02.png",
+      "design": "covers/cover-02.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-03",
+      "name": "封面 3",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM36tk3.ZDL",
+      "preview": "covers/cover-03.png",
+      "design": "covers/cover-03.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-04",
+      "name": "封面 4",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM37tk1.ZDL",
+      "preview": "covers/cover-04.png",
+      "design": "covers/cover-04.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-05",
+      "name": "封面 5",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM34mbr.ZDL",
+      "preview": "covers/cover-05.png",
+      "design": "covers/cover-05.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-07",
+      "name": "封面 7",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM35dra.ZDL",
+      "preview": "covers/cover-07.png",
+      "design": "covers/cover-07.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-08",
+      "name": "封面 8",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM32p51.ZDL",
+      "preview": "covers/cover-08.png",
+      "design": "covers/cover-08.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-09",
+      "name": "封面 9",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM33mbr.ZDL",
+      "preview": "covers/cover-09.png",
+      "design": "covers/cover-09.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-10",
+      "name": "封面 10",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM31twd.ZDL",
+      "preview": "covers/cover-10.png",
+      "design": "covers/cover-10.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-11",
+      "name": "封面 11",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM28twi.ZDL",
+      "preview": "covers/cover-11.png",
+      "design": "covers/cover-11.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-12",
+      "name": "封面 12",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM29bfd.ZDL",
+      "preview": "covers/cover-12.png",
+      "design": "covers/cover-12.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-13",
+      "name": "封面 13",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM30bfs.ZDL",
+      "preview": "covers/cover-13.png",
+      "design": "covers/cover-13.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-14",
+      "name": "封面 14",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM27dlx.ZDL",
+      "preview": "covers/cover-14.png",
+      "design": "covers/cover-14.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-15",
+      "name": "封面 15",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM26dgc.ZDL",
+      "preview": "covers/cover-15.png",
+      "design": "covers/cover-15.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-16",
+      "name": "封面 16",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM24jt4.ZDL",
+      "preview": "covers/cover-16.png",
+      "design": "covers/cover-16.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-17",
+      "name": "封面 17",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM25dgc.ZDL",
+      "preview": "covers/cover-17.png",
+      "design": "covers/cover-17.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-18",
+      "name": "封面 18",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM22ac5.ZDL",
+      "preview": "covers/cover-18.png",
+      "design": "covers/cover-18.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-19",
+      "name": "封面 19",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM23b15.ZDL",
+      "preview": "covers/cover-19.png",
+      "design": "covers/cover-19.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-20",
+      "name": "封面 20",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM20vib.ZDL",
+      "preview": "covers/cover-20.png",
+      "design": "covers/cover-20.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-21",
+      "name": "封面 21",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM21sx3.ZDL",
+      "preview": "covers/cover-21.png",
+      "design": "covers/cover-21.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-22",
+      "name": "封面 22",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM18ac3.ZDL",
+      "preview": "covers/cover-22.png",
+      "design": "covers/cover-22.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-23",
+      "name": "封面 23",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM19vib.ZDL",
+      "preview": "covers/cover-23.png",
+      "design": "covers/cover-23.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
+    },
+    {
+      "id": "cover-24",
+      "name": "封面 24",
+      "author": "Zison",
+      "license": "CC-BY-4.0",
+      "source": "NAM-Recovered-20261028-1139 · NAM17ac3.ZDL",
+      "preview": "covers/cover-24.png",
+      "design": "covers/cover-24.json",
+      "tags": [
+        "shared",
+        "recovered"
+      ],
+      "added": "2026-10-28"
     }
   ]
 }
