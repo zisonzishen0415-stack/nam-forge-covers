@@ -12,12 +12,12 @@ entered by the user; the workflow's GITHUB_TOKEN is used server-side.
 """
 import base64
 import datetime as dt
-import gzip
 import json
 import os
 import re
 import subprocess
 import sys
+import zlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -146,8 +146,14 @@ def parse_payload(body):
     if len(raw) > 256 * 1024:
         raise Invalid("payload is too large")
     # The enc field is inside the compressed blob, so sniff the gzip magic.
-    if raw.startswith(b"\x1f\x8b"):
-        raw = gzip.decompress(raw)
+    if raw[:2] == bytes([0x1F, 0x8B]):
+        decomp = zlib.decompressobj(16 + zlib.MAX_WBITS)
+        raw = decomp.decompress(raw, 64 * 1024)
+        if decomp.unconsumed_tail:
+            raise Invalid("payload is too large")
+        raw += decomp.flush()
+        if len(raw) > 64 * 1024:
+            raise Invalid("payload is too large")
     try:
         payload = json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError):
