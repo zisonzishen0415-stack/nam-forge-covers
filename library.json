@@ -18,20 +18,6 @@
       "added": "2026-10-28"
     },
     {
-      "id": "cover-01",
-      "name": "封面 1",
-      "author": "Zison",
-      "license": "CC-BY-4.0",
-      "source": "NAM-Recovered-20261028-1139 · NAM39tb3.ZDL",
-      "preview": "covers/cover-01.png",
-      "design": "covers/cover-01.json",
-      "tags": [
-        "shared",
-        "recovered"
-      ],
-      "added": "2026-10-28"
-    },
-    {
       "id": "cover-02",
       "name": "封面 2",
       "author": "Zison",
