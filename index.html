@@ -105,13 +105,15 @@ footer{max-width:1200px;margin:0 auto;padding:10px 22px 34px;color:var(--muted);
     return;
   }
   const isHttp = (s) => /^https?:\/\//i.test(String(s || ''));
+  const bust = 'v=' + Date.now();
+  const withBust = (url) => String(url) + (String(url).includes('?') ? '&' : '?') + bust;
   for (const c of covers) {
     const card = document.createElement('article');
     card.className = 'card';
     if (c.preview) {
       const img = document.createElement('img');
       img.className = 'thumb'; img.loading = 'lazy'; img.alt = c.name || c.id || 'cover';
-      img.src = String(c.preview);
+      img.src = withBust(c.preview);
       card.append(img);
     } else {
       const ph = document.createElement('div');
@@ -145,11 +147,11 @@ footer{max-width:1200px;margin:0 auto;padding:10px 22px 34px;color:var(--muted);
     }
     const links = document.createElement('div'); links.className = 'links';
     if (c.design) {
-      const a = document.createElement('a'); a.className = 'btn'; a.href = String(c.design); a.download = ''; a.textContent = '下载设计 JSON';
+      const a = document.createElement('a'); a.className = 'btn'; a.href = withBust(c.design); a.download = ''; a.textContent = '下载设计 JSON';
       links.append(a);
     }
     if (c.preview) {
-      const a = document.createElement('a'); a.className = 'btn'; a.href = String(c.preview); a.download = ''; a.textContent = '下载 PNG';
+      const a = document.createElement('a'); a.className = 'btn'; a.href = withBust(c.preview); a.download = ''; a.textContent = '下载 PNG';
       links.append(a);
     }
     body.append(links);
