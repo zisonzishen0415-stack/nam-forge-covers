@@ -2,16 +2,24 @@
 
 Thanks for sharing! This library only accepts covers you made yourself, or covers that use artwork you have explicit permission to redistribute.
 
-## 1. Export from NAM FORGE
+## 1. Share from NAM FORGE (recommended)
 
-In the app's **封面设计** page:
+In the app's **封面设计** page, click **分享到共享库**. Fill in the cover name, author, license and source, then click **分享**.
+
+- The app packs the design and opens a prefilled GitHub issue.
+- Click **Submit new issue** once. No token and no file exports are needed.
+- The `Accept shared cover` workflow validates the payload, writes the design JSON + PNG, updates `library.json`, comments on the issue and closes it.
+
+The workflow only handles issues that contain the app-generated `NAMFORGE-COVER` marker. It runs with the repository's own `GITHUB_TOKEN`; no personal token is involved.
+
+## 2. Manual submission (fallback)
+
+Export from the app:
 
 - **导出设计** → `namforge-design-YYYY-MM-DD.json` (the actual design; required)
 - **导出封面** → `cover-*.png` (preview; optional but recommended)
 
-## 2. Open a submission issue
-
-Use the [Submit a cover](https://github.com/zisonzishen0415-stack/nam-forge-covers/issues/new?template=submit-cover.yml) issue form and fill in:
+Then use the [Submit a cover](https://github.com/zisonzishen0415-stack/nam-forge-covers/issues/new?template=submit-cover.yml) issue form and fill in:
 
 - cover name
 - author / credit

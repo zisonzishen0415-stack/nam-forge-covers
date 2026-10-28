@@ -1,0 +1,58 @@
+name: Accept shared cover
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: cover-submission
+  cancel-in-progress: false
+
+jobs:
+  accept:
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Process submission
+        id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          python3 .github/scripts/accept_cover.py > /tmp/result.json
+          cat /tmp/result.json
+
+      - name: Reply and close
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ ! -s /tmp/result.json ]; then
+            echo "No result; leaving the issue open."
+            exit 0
+          fi
+          status=$(jq -r '.status // "error"' /tmp/result.json)
+          message=$(jq -r '.message // "处理失败"' /tmp/result.json)
+          case "$status" in
+            accepted)
+              gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$message"
+              gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --reason completed
+              ;;
+            invalid)
+              gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "未收录：$message"
+              gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --reason "not planned"
+              ;;
+            error)
+              gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$message"
+              ;;
+            *)
+              echo "Ignored: $message"
+              ;;
+          esac
